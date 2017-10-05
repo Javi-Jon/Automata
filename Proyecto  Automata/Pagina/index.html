@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Administracion automata</title>
+	 <meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="./CSS/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		
+		$("#bcontrol").click(function(){
+		hideAll();
+		$("#contenedor-control").show();
+			})
+		$("#binicio").click(function(){
+		hideAll();
+		$("#contenedor-inicio").show();
+			})
+		$("#bregistro").click(function(){
+		hideAll();
+		$("#contenedor-registro").show();
+			})
+		$("#bmantenimiento").click(function(){
+		hideAll();
+		$("#contenedor-mantenimiento").show();
+			})
+
+	})
+	
+
+	function hideAll(){
+		$("#contenedor-control").hide();
+		$("#contenedor-inicio").hide();
+		$("#contenedor-registro").hide();
+		$("#contenedor-mantenimiento").hide();
+
+			
+	}
+
+
+			</script>
+</head>
+<body>
+	 <div id="contenedor">
+
+	 	<!--contenedor menu y logo-->
+	 	<header id="cabecera">
+	 				<a href="">
+	 					<img src="./img/logo.png" id="logo">
+	 				</a>
+	 		<nav>
+	 			<ul id="barranav">
+	 				<li id="binicio">Inicio</li>
+	 				<li id="bcontrol">Control</li>
+	 				<li id="bregistro">Registro</li>
+	 				<li id="bmantenimiento">Mantenimiento</li>
+	 			</ul>	
+			</nav>
+	 	</header>
+	 	
+<!--contenedor controles-->
+	 	<div id="contenedor-control" class="content">
+	 		<aside id="controles">
+	 			
+	 			<a href="#paradamv"  id="bmenu"><img src="./img/menu.png" alt="menu" id="menu" ></a>
+	 		</aside>
+	 		<section id="mapaPC">
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ 				<div id="mapa">
+	 				<img class="position" id="p1" src="./img/tram.png">
+	 				<img class="position" id="p2" src="./img/tram.png">
+	 				<img class="position" id="p3" src="./img/tram.png">
+	 				<img class="position" id="p4" src="./img/tram.png">
+	 				<img class="position" id="p5" src="./img/tram.png">
+	 				<img class="position" id="p6" src="./img/tram.png">
+	 			</div>
+<a href="#barranav"  id="up"><img src="./img/up.png" alt="up" id="up" ></a>
+	 		</section>
+	 		<section id="mapaMV" >
+	 			<h1 id="paradamv" style="color: white">parada</h1></section>
+	 	</div>
+
+
+<!--contenedor inicio-->
+	 	<div id="contenedor-inicio" class="content">	 		
+	 		<section>
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	 		<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
+	 	</div>
+<!--contenedor registros-->
+	 	<div id="contenedor-registro" class="content">
+	 		<section id="section-registro">
+	 		<span></span
+	 			
+
+	 			</table>
+	 		</section>
+		</div>
+
+<!--contenedor mantenimiento-->
+	 	<div id="contenedor-mantenimiento" class="content">
+	 		<section></section>
+	 	</div>
+<!--contenedor pie de pagina-->
+	 <footer><p id="abc">Pie de página</p></footer>
+	 </div>
+
+</body>
+<script type="text/javascript" src="./JS/tablaRegisto.js"></script>
+</html>
