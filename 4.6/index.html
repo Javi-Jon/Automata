@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Administracion automata</title>
+	 <meta name="viewport" content="width=device-width">
+	 <meta charset="utf-8"> 
+	<link rel="stylesheet" type="text/css" href="./CSS/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="./JS/main.js"></script>
+</head>
+<body>
+	 <div id="contenedor">
+
+	 	<!--contenedor menu y logo-->
+	 	<header id="cabecera">
+	 				<a href="">
+	 					<img src="./img/logo.png" id="logo">
+	 				</a>
+	 		<nav>
+	 			<ul id="barranav">
+	 				<li id="binicio">Inicio</li>
+	 				<li id="bcontrol">Control</li>
+	 				<li id="bregistro">Registro</li>
+	 				<li id="bmantenimiento">Ajustes</li>
+	 			</ul>	
+			</nav>
+	 	</header>
+	 	
+<!--contenedor controles-->
+	 	<div id="contenedor-control" class="content">
+	 		<aside id="controles">
+	 				<a href="#paradamv"  id="bmenu"><img src="./img/menu.png" alt="menu" id="menu" ></a>
+	 				<br>
+	 			<form method="get" onsubmit="event.preventDefault()">
+					<input id="origen" type="hidden" value="true" name='"mis_datos".origen'>
+					<input class="button_text" type="submit" name="submit" value="Iniciar" />
+				</form>
+				</br>
+				<form method="get">
+					<fieldset>
+						<legend>Controles</legend>
+						<label class="description" for="element_1">Parada </label>
+						<div>
+							<select class="element select medium" id="element_1" name='"Output SMC".Posicion' required>
+								<option value="" selected="selected">--</option>
+								<option value="1">Angulema</option>
+								<option value="2">Parlamento</option>
+								<option value="3">Lovaina</option>
+								<option value="4">Sancho el Sabio</option>
+								<option value="5">Europa</option>
+								<option value="6">Honduras</option>
+							</select>
+						</div>
+
+						<label class="description" for="element_2">Velocidad </label>
+						<div>
+							<select class="element select medium" id="element_2" name='"Output SMC".Velocidad' required>
+								<option value="" selected="selected">--</option>
+								<option value="0" >Lenta</option>
+								<option value="1" >Media</option>
+								<option value="2" >Rapida</option>
+							</select>
+						</div>
+						</br>
+						<input type="hidden" name='"mis_datos".origen' value="false" />
+						<input id="saveForm" class="button_text" type="button" name="submit" value="Submit" onclick="llamarParada()"/>
+					</fieldset>
+				</form>
+	 			
+	 		
+	 		</aside>
+	 		<section id="mapaPC">
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ 				<div id="mapa">
+	 				<img id="p1" src="./img/tram.png">
+	 			<!--	<img class="position" id="p2" src="./img/tram.png">
+	 				<img class="position" id="p3" src="./img/tram.png">
+	 				<img class="position" id="p4" src="./img/tram.png">
+	 				<img class="position" id="p5" src="./img/tram.png">
+	 				<img class="position" id="p6" src="./img/tram.png">-->
+	 				<!--MEJOR no borrar hasta que acabemos la parte de animacion-->
+
+	 			</div>
+<a href="#barranav"  class="up"><img src="./img/up.png" alt="up" class="up" ></a>
+	 		</section>
+	 		<section id="mapaMV" >
+	 		<p> el tranvía esta en	<h1 id="paradamv" >parada</h1></p></section>
+	 	</div>
+
+
+<!--contenedor inicio-->
+	 	<div id="contenedor-inicio" class="content">	 		
+	 		<section>
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	 		<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
+	 	</div>
+<!--contenedor registros-->
+	 	<div id="contenedor-registro" class="content">
+	 		<section id="section-registro">
+	 		<span></span>
+	 			
+
+	 			</table>
+	 		</section>
+		</div>
+
+<!--contenedor mantenimiento-->
+	 	<div id="contenedor-mantenimiento" class="content">
+	 		<section>
+	 		</section>
+	 	</div>
+<!--contenedor pie de pagina-->
+	 <footer><p id="abc">Pie de página</p></footer>
+	 </div>
+
+</body>
+<script type="text/javascript" src="./JS/tablaRegisto.js"></script>
+<script type="text/javascript" src="./JS/posicion.js"></script>
+<script type="text/javascript" src="./JS/animaciones.js"></script>
+<script type="text/javascript" src="./JS/css-animations.js"></script>
+</html>
