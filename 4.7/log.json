@@ -1,0 +1,22 @@
+[
+	{
+		"hora":"7",
+		"parada":"Angulema"
+	},
+	{
+		"hora":"8",
+		"parada":"Parlamento"
+	},
+	{
+		"hora":"10",
+		"parada":"Europa"
+	},
+	{
+		"hora":"13",
+		"parada":"Honduras"
+	},
+	{
+		"hora":"17",
+		"parada":"Angulema"
+	}
+]

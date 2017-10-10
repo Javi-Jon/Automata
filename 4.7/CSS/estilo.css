@@ -1,0 +1,425 @@
+/**author: Javi y Jon
+version:3.5
+**/
+
+body{
+	background-color: #dee5ff;
+}
+#contenedor{
+	position: absolute;
+	float: left;
+	height: 98%;
+	width: 98%;
+}
+
+#logo{
+	min-width: 53px;
+
+	float: left;
+	max-width: 10%;
+	height: auto;
+}
+#bmenu{
+
+	display: none;
+
+	height: 15%;
+	position: absolute;
+	z-index: 2;
+	right: 2%;
+}
+
+
+.r200{
+animation-name: r200;
+animation-duration:3s;
+	/*animation:run 1s ;*/
+	  animation-fill-mode: forwards;
+}
+.r400{
+animation-name: r400;
+animation-duration:6s;
+	/*animation:run 1s ;*/
+	  animation-fill-mode: forwards;
+}
+.r600{
+animation-name: r600;
+animation-duration:9s;
+	/*animation:run 1s ;*/
+	  animation-fill-mode: forwards;
+}
+.r800{
+animation-name: r800;
+animation-duration:12s;
+	/*animation:run 1s ;*/
+	  animation-fill-mode: forwards;
+}
+.r1000{
+animation-name: r1000;
+animation-duration:15s;
+	/*animation:run 1s ;*/
+	  animation-fill-mode: forwards;
+}
+.l200{
+animation-name: l200;
+animation-duration:3s;
+	/*animation:run 1s ;*/
+	  animation-fill-mode: forwards;
+}
+.l400{
+animation-name: l400;
+animation-duration:3s;
+	/*animation:run 1s ;*/
+	  animation-fill-mode: forwards;
+}
+.l600{
+animation-name: l600;
+animation-duration:3s;
+	/*animation:run 1s ;*/
+	  animation-fill-mode: forwards;
+}
+.l800{
+animation-name: l800;
+animation-duration:3s;
+	/*animation:run 1s ;*/
+	  animation-fill-mode: forwards;
+}
+.l1000{
+animation-name: l1000;
+animation-duration:3s;
+	/*animation:run 1s ;*/
+	  animation-fill-mode: forwards;
+}
+header{
+	height: 15%;
+	position: absolute;
+	width: 100%;
+}
+#barranav li{
+	float: left;
+	list-style: none;
+	margin: 0%;
+	padding: 2%;
+	background-color: #6cc16b;
+	width: 18%;
+	cursor: default; /*muestra el cursor por defecto, flecha, en la barra de menu*/
+}
+#paradamv{
+	color: #2b7c2d;
+	font-size: 30px;
+
+
+
+}
+
+#barranav{width: 80%;margin: auto;min-width: 410px;}
+#barranav li:hover{
+	background-color: #558c54;
+}
+#barranav li:active{
+	background-color: #10b70e;
+}
+
+.content{
+	position: absolute;
+	top: 15%;
+	width: 100%;
+	height: 74%;
+	margin: 10px auto;
+}
+#contenedor-control section{
+	background-color: #e4e4e4;
+	width: 75%;
+	float: left;
+	height: 100%;
+}
+
+#contenedor-control aside{
+	width: 25%;
+	background: #666;
+	height: 100%;
+	float: left;
+}
+#p1{
+
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	top: 30%;
+
+}
+
+#contenedor-inicio{
+	background-color: #e4e4e4;
+	float: left;
+	display: block;
+}
+#contenedor-control{
+	background-color: red;
+	float: left;
+	display: none;
+}
+.up{
+	display: none;
+}
+
+
+#contenedor-mantenimiento{
+	background-color: #e4e4e4;
+	float: left;
+	display: none;
+}
+#contenedor-registro{
+	background-color: #e4e4e4;
+	float: left;
+	display: none;
+}
+span table{
+	border-spacing: 0px;
+	border: 2px solid;
+	width: 70%;
+	margin: 1% auto;
+
+}
+span table th{
+
+	border: 1px solid;
+	background-color: gray;
+}
+span table td{
+	border: 1px solid;
+
+}
+footer{
+	background-color: #4d4b4e;
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	height: 10%;
+	color: #e4e4e4;
+}
+#mapa{
+	visibility: visible;
+	width: 1000px;
+	height: 20%;
+	border: solid white;
+	position: relative;
+	top: 80%;
+	left: 24%;
+	float: left;
+	margin: -22%;
+
+
+}
+#mapaPC{
+	display: block;
+}
+#mapaMV{
+	display: none;
+	background-color: red;
+	text-align: center;
+
+}
+
+#p1{
+	margin-top: -5%;
+	margin-right: 9%;
+
+	float: left;
+	
+
+}
+/*propiedades tablet*/
+/*media query mapa tranvia a 1325 para que el mapa no quede  fuera*/
+
+@media only screen and (max-width:1325px) and (min-width: 620px){
+	#mapaPC{
+		display: none;
+	}
+	#mapa{
+		display: none;
+	}
+
+	#mapaMV{
+		display: block;
+	}
+
+
+
+
+
+}
+
+
+/*propiedades movil*/
+
+@media only screen and (max-width:620px){
+
+
+	.button_text{
+
+		float: left;
+		width: 80%;
+		margin: 10% 15%;
+	}
+	#mapaPC{
+		display: none;
+	}
+	#mapa{
+		display: none;
+	}
+
+	#mapaMV{
+		display: block;
+	}
+
+
+
+
+
+	#contenedor{position: absolute;float: left;height: 100%;width: 100%;margin: 0px;left: 0%;min-width: 414px;}
+
+
+	body{
+		background-color: black;
+	}
+	#contenedor-control aside{
+		width: 100%;
+		background: #dee5ff;
+		height: 114%;
+		float: left;
+	}
+
+	.content{
+		position: absolute;
+		top: 10%;
+		width: 100%;
+		height: 87%;
+		margin: 5px auto;
+	}
+
+	#bmenu{
+
+		display: block;
+
+		height: 15%;
+		position: absolute;
+		z-index: 2;
+		right: 2%;
+	}
+
+	.up{
+
+		display: block;
+
+		height: 5%;
+		position: fixed;
+		z-index: 2;
+		right: 2%;
+		bottom: 5%;
+	}
+	#contenedor-control section{
+		background-color: #446387;
+		width: 100%;
+		float: left;
+		height: 115%;
+
+	}
+	footer{
+		display: none;
+		clear: both;
+	}
+}
+
+/*Botones*/
+.button_text{
+
+	background-color: #008CBA;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 8px;
+	font-size: 24px;
+	cursor: pointer;
+	outline: none;
+	/*border-radius: 15px;*/
+	box-shadow: 0 9px #999;
+}
+
+.button_text:active {
+	background-color: #008CBA;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+
+@keyframes r200{
+
+
+	100% {transform:translateX(200px);}
+}
+@keyframes r400{
+
+
+	100% {transform:translateX(400px);}
+}
+
+@keyframes r600{
+
+
+	100% {transform:translateX(600px);}
+}
+@keyframes r800{
+
+
+	100% {transform:translateX(800px);}
+}
+@keyframes r1000{
+
+
+	100% {transform:translateX(1000px);}
+}
+@keyframes l200{
+
+
+	100% {transform:translateX(-200px);}
+}
+@keyframes l400{
+
+
+	100% {transform:translateX(-400px);}
+}
+@keyframes l600{
+
+
+	100% {transform:translateX(-600px);}
+}
+@keyframes l800{
+
+
+	100% {transform:translateX(-800px);}
+}
+@keyframes l1000{
+
+
+	100% {transform:translateX(-1000px);}
+}
+
+.imagen{
+	max-width: 100%;
+	height: auto;
+	display:block;
+	margin: 5% auto;
+}
+
+/*media query mapa tranvia a 1325*/
+
+
+/*Hacer media querie a partir de 620px ancho*/
+
+
+
+/*Hacer media querie a partir de 620px ancho*/

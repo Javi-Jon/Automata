@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Administracion automata</title>
+	 <meta name="viewport" content="width=device-width">
+	 <meta charset="utf-8"> 
+	<link rel="stylesheet" type="text/css" href="./CSS/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="./JS/main.js"></script>
+</head>
+<body>
+	 <div id="contenedor">
+
+	 	<!--contenedor menu y logo-->
+	 	<header id="cabecera">
+	 				<a href="">
+	 					<img src="./img/logo.png" id="logo">
+	 				</a>
+	 		<nav>
+	 			<ul id="barranav">
+	 				<li id="binicio">Inicio</li>
+	 				<li id="bcontrol">Control</li>
+	 				<li id="bregistro">Registro</li>
+	 				<li id="bmantenimiento">Contácto</li>
+	 			</ul>	
+			</nav>
+	 	</header>
+	 	
+<!--contenedor controles-->
+	 	<div id="contenedor-control" class="content">
+	 		<aside id="controles">
+	 				<a href="#paradamv"  id="bmenu"><img src="./img/menu.png" alt="menu" id="menu" ></a>
+	 				<br>
+	 			<form method="get" id="frmIni">
+					<input id="origen" type="hidden" value="true" name='"mis_datos".origen'>
+					<input id="posicionInicial" type="hidden" value="1" name='"Output SMC".Posicion'>
+					<input class="button_text" type="button" name="submit" value="Iniciar" onclick="llamarOrigen()"/>
+				</form>
+				</br>
+				<form method="get" id="frmParada">
+					<fieldset>
+						<legend>Controles</legend>
+						<label class="description" for="element_1">Parada </label>
+						<div>
+							<select class="element select medium" id="element_1" name='"Output SMC".Posicion' required>
+								<option value="" selected="selected">--</option>
+								<option value="1">Angulema</option>
+								<option value="2">Parlamento</option>
+								<option value="3">Lovaina</option>
+								<option value="4">Sancho el Sabio</option>
+								<option value="5">Europa</option>
+								<option value="6">Honduras</option>
+							</select>
+						</div>
+						</br>
+						<input type="hidden" name='"mis_datos".origen' value="false" />
+						<input id="saveForm" class="button_text" type="button" name="submit" value="Movimiento" onclick="llamarParada()"/>
+					</fieldset>
+				</form>
+	 			
+	 		
+	 		</aside>
+	 		<section id="mapaPC">
+	 			<p>
+					En este apartado se puede ver la situación actual del tranvía. Si está en movimiento o
+					detenido en una	parada.
+				</p>
+				<p>
+					Para controlar el tranvía, se tiene que seleccionar el destino empleando los mandos del apartado
+					situado a la izquierda. Para ello se abre el desplegable y se escoge la parada deseada y se selecciona
+					el boton de movimiento. En el caso de no elegir un destino el tranvía no se desplazará.
+				</p>
+ 				<div id="mapa">
+	 				<img id="p1" src="./img/tram.png">
+
+	 			</div>
+<a href="#barranav"  class="up"><img src="./img/up.png" alt="up" class="up" ></a>
+	 		</section>
+	 		<section id="mapaMV" >
+	 		<p>El tranvía esta en	<h1 id="paradamv">Parada</h1></p>
+			<img src="./img/ciudad.jpg" alt="Ciudad"  class="imagen"/>
+			</section>
+
+	 	</div>
+
+
+<!--contenedor inicio-->
+	 	<div id="contenedor-inicio" class="content">	 		
+	 		<section>
+	 			<img src="./img/vitoria.jpg" alt="Tranvía Vitoria-Gasteiz" class="imagen"/></section>
+			<p>
+				Euskotren restablecerá el próximo lunes, 4 de septiembre, el horario de invierno en los tranvías de Bilbao y  Vitoria-Gasteiz y la lanzadera al Parque Tecnológico de Zamudio.
+
+				Con la llegada del  período lectivo la oferta se adapta de nuevo a las necesidades de la ciudadanía para facilitar el trasporte a las personas que tienen que desplazarse por motivo de trabajo o estudios.
+			</p>
+
+					<u>TRANVÍA VITORIA-GASTEIZ</u>
+			<ul>
+				<li>
+			GernikakoArbola –Angulema:    8:37 h
+					</li>
+				<li>
+			Wellington – Angulema:    8:46 h
+					</li>
+				<li>
+			Ibaiondo – Angulema:   12:35 h
+					</li>
+				<li>
+			Angulema – Ibaiondo:   8:57 h y  9:04 h
+					</li>
+				<li>
+			Lovaina – Ibaiondo:   13:03 h
+				</li>
+
+	 	</div>
+<!--contenedor registros-->
+	 	<div id="contenedor-registro" class="content">
+	 		<section id="section-registro">
+	 		<span id="tabla"></span>
+	 			
+
+	 			</table>
+	 		</section>
+		</div>
+
+<!--contenedor mantenimiento-->
+	 	<div id="contenedor-mantenimiento" class="content">
+	 		<section>
+				<p>
+					<strong>Oficina de Información a la Clientela del Tranvía</strong>
+				</p>
+				<p>
+					<u>Vitoria-Gasteiz</u>
+				</p>
+				<p>
+					Sancho el Sabio, 9
+				</p>
+
+				<ul>
+					<li>
+						Horario:
+					</li>
+						L-V (laborables): 8:00 a 19:30
+				</ul>
+				<ul>
+					<li>
+						Horario de agosto:
+					</li>
+					L-V (laborables): 8:00 a 14:00
+				</ul>
+	 		</section>
+	 	</div>
+<!--contenedor pie de pagina-->
+	 <footer><p id="abc">
+		 © 2001-17 Eusko Trenbideak - Ferrocarriles Vascos S.A.
+	 </p></footer>
+	 </div>
+
+</body>
+<script type="text/javascript" src="./JS/tablaRegisto.js"></script>
+<script type="text/javascript" src="./JS/posicion.js"></script>
+<script type="text/javascript" src="./JS/animaciones.js"></script>
+<script type="text/javascript" src="./JS/css-animations.js"></script>
+</html>
